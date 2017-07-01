@@ -1,0 +1,22 @@
+.main-header {
+	min-height: 56px;
+}
+.main-navigation__list {
+	display: flex;
+	justify-content: space-between;
+}
+.main-navigation__link {
+	color: #000;
+	font-weight: bold;
+}
+.logo {
+	width: 138px;
+    margin: 0 auto;
+    height: 0;
+}
+
+.intro {
+    height: 510px;
+    background: #dbe9f2 url("../img/bg/main-bg.jpg") no-repeat;
+    background-position: 100% 20.3%;
+}
