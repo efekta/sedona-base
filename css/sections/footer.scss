@@ -30,7 +30,7 @@
 	width: 46px;
 	height: 46px;
 	background: #81b3d2;
-	// position: relative;
+	position: relative;
 }
 .social__icon {
 	position: absolute;
@@ -39,8 +39,12 @@
 	position: relative;
 	color: #000;
 	font-weight: 500;
+	width: 200px;
 }
 .dev__logo {
 	position: absolute;
 	left: 20%;
+	top: 20%;
+	width: 29px;
+	height: 35px;
 }
