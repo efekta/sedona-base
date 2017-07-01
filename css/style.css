@@ -607,11 +607,34 @@ h6 {
   background: #fff; }
 
 .booking {
+  text-align: center;
   padding: 50px 0 60px; }
 
 .booking__title {
   margin-bottom: 35px;
-  text-align: center;
   font-size: 30px;
   font-weight: bold;
   color: #000; }
+
+.booking__desc {
+  width: 490px;
+  margin: 0 auto;
+  margin-bottom: 52px; }
+
+.booking__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 66px;
+  padding: 15px 130px;
+  border: none;
+  background: #81b3d2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px; }
