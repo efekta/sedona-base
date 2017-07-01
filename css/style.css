@@ -548,9 +548,70 @@ h6 {
   margin-bottom: 30px; }
 
 .features__desc {
-  color: #333333; }
+  color: #333; }
 
 .features__icon {
   width: 75px;
   height: 72px;
   margin-bottom: 35px; }
+
+.attraction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #eee; }
+
+.attraction__item {
+  width: 35%;
+  padding: 38px 60px 63px;
+  text-align: center;
+  font-weight: 500; }
+
+.attraction__name {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px; }
+
+.about__number {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px; }
+
+.attraction__desc {
+  color: #333; }
+
+.about__number::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 125%;
+  top: 50%;
+  width: 13px;
+  height: 2px;
+  background: #fff; }
+
+.about__number::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 125%;
+  top: 50%;
+  width: 13px;
+  height: 2px;
+  background: #fff; }
+
+.booking {
+  padding: 50px 0 60px; }
+
+.booking__title {
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000; }
