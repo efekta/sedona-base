@@ -1,6 +1,7 @@
 .footer {
 	display: flex;
 	justify-content: space-around;
+  	min-height: 120px;
 	padding: 50px 0;
 }
 .copy {
@@ -27,8 +28,9 @@
 // }
 .social-link__svg {
 	position: absolute;
-	top: 35%;
-	left: 35%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
     width: 16px;
     height: 16px;
     fill: #fff;
@@ -44,8 +46,9 @@
 }
 .dev__logo {
 	position: absolute;
-	right: 0;
-	top: 15%;
+	left: 10%;
+	top: 50%;
 	width: 29px;
 	height: 35px;
+	transform: translate(-50%, -50%);
 }
