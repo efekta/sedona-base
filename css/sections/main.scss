@@ -29,6 +29,29 @@
 .about__number {
 	display: block;
 	margin-bottom: 27px;
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+}
+.about__number::before {
+	content: '';
+    display: block;
+    position: absolute;
+    right: 125%;
+    top: 50%;
+    width: 13px;
+    height: 2px;
+	background: #fff;
+}
+.about__number::after {
+	content: '';
+    display: block;
+    position: absolute;
+    left: 125%;
+    top: 50%;
+    width: 13px;
+    height: 2px;
+	background: #fff;
 }
 .about__desc {
 	font-size: 14px;
@@ -77,15 +100,12 @@
 	color: #000;
 	margin-bottom: 30px;
 }
-.about__number {
+.attraction__number {
 	position: relative;
 	display: inline-block;
 	margin: 0 5px;
 }
-.attraction__desc {
-	color: #333;
-}
-.about__number::before {
+.attraction__number::before {
 	content: '';
     display: block;
     position: absolute;
@@ -93,9 +113,9 @@
     top: 50%;
     width: 13px;
     height: 2px;
-	background: #fff;
+	background: #333;
 }
-.about__number::after {
+.attraction__number::after {
 	content: '';
     display: block;
     position: absolute;
@@ -103,8 +123,12 @@
     top: 50%;
     width: 13px;
     height: 2px;
-	background: #fff;
+	background: #333;
 }
+.attraction__desc {
+	color: #333;
+}
+
 .booking {
 	text-align: center;
 	padding: 50px 0 60px;
@@ -132,3 +156,15 @@
 	font-weight: bold;
 	font-size: 21px;
 }
+
+
+// .attraction__number::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     right: 125%;
+//     top: 50%;
+//     width: 13px;
+//     height: 2px;
+//     background: #333;
+// }
