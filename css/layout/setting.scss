@@ -9,8 +9,6 @@ body, html {
 	line-height: 26px;	
 }
 body {
-	display: flex;
-    flex-direction: column;
   	height: 100%;
 	margin: 0;
 	text-transform: uppercase;
@@ -39,10 +37,12 @@ h6 {
 	font-weight: normal;
 }
 .wrapp {
+	display: flex;
+  flex-direction: column;
+  height: 100%;
  	width: 1200px;
     margin: 0 auto;
     box-shadow: 0 15px 25px #d3d3d3;
-    flex-grow: 1;
 }
 .wrapper {
 	display: flex;
@@ -50,6 +50,7 @@ h6 {
 	width: 40%;
 	padding: 20px 45px;
 }
-.content {
-	flex-grow: 1;
+.container {
+	flex: 1 0 auto;
 }
+
