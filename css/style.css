@@ -453,9 +453,7 @@ h6 {
   flex-direction: column;
   height: 100%;
   width: 1200px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 15px 25px #d3d3d3;
-  box-shadow: 0 15px 25px #d3d3d3; }
+  margin: 0 auto; }
 
 .wrapper {
   display: -webkit-box;
@@ -473,7 +471,18 @@ h6 {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+  -webkit-box-shadow: 0 -5px 25px #d3d3d3;
+  box-shadow: 0 -5px 25px #d3d3d3; }
+
+.footer {
+  -webkit-box-shadow: 0 15px 25px #d3d3d3;
+  box-shadow: 0 15px 25px #d3d3d3; }
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both; }
 
 .main-header {
   min-height: 56px; }
@@ -648,7 +657,9 @@ h6 {
 
 .booking {
   text-align: center;
-  padding: 50px 0 60px; }
+  padding: 50px 0 0 0;
+  position: relative;
+  min-height: 291px; }
 
 .booking__title {
   margin-bottom: 35px;
@@ -662,22 +673,17 @@ h6 {
   margin-bottom: 52px; }
 
 .booking__button {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 66px;
-  padding: 15px 130px;
-  border: none;
-  background: #81b3d2;
-  color: #fff;
+  width: 570px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px; }
+  color: #fff;
+  background-color: #766357;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 29px 100px; }
 
 .footer {
   display: -webkit-box;
@@ -752,10 +758,50 @@ h6 {
 
 .dev__logo {
   position: absolute;
-  left: 10%;
+  left: 0;
   top: 50%;
   width: 29px;
   height: 35px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.modal {
+  position: relative;
+  width: 570px;
+  margin: 0 auto; }
+
+.modal-form {
+  width: 570px;
+  padding: 40px 55px;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+  z-index: 2; }
+
+.modal-form__item {
+  margin-bottom: 34px; }
+
+.modal-form label {
+  width: 30%;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  padding-right: 15px;
+  font-weight: bold; }
+
+.modal-form__date {
+  float: right;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "PT Sans","Tahoma",sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 60%;
+  padding: 10px 23px;
+  color: #000;
+  background: #f2f2f2;
+  border: none;
+  outline: none; }

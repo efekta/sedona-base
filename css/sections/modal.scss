@@ -1,0 +1,39 @@
+.modal {
+    position: relative;
+    width: 570px;
+    margin: 0 auto;
+}
+.modal-form {
+    width: 570px;
+    padding: 40px 55px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px grey;
+    z-index: 2;
+}
+.modal-form__item {
+    margin-bottom: 34px;
+}
+.modal-form label {
+    width: 30%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.modal-form__date {
+    float: right;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "PT Sans","Tahoma",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 60%;
+    padding: 10px 23px;
+    color: #000;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+}
