@@ -673,17 +673,19 @@ h6 {
   margin-bottom: 52px; }
 
 .booking__button {
-  width: 570px;
+  width: 458px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  background-color: #766357;
+  background-color: #81b3d2;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 29px 100px; }
+  padding: 16px 0;
+  margin-bottom: 65px;
+  text-align: center; }
 
 .footer {
   display: -webkit-box;
@@ -765,43 +767,3 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-
-.modal {
-  position: relative;
-  width: 570px;
-  margin: 0 auto; }
-
-.modal-form {
-  width: 570px;
-  padding: 40px 55px;
-  position: absolute;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 10px grey;
-  box-shadow: 0 0 10px grey;
-  z-index: 2; }
-
-.modal-form__item {
-  margin-bottom: 34px; }
-
-.modal-form label {
-  width: 30%;
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 18px;
-  padding-right: 15px;
-  font-weight: bold; }
-
-.modal-form__date {
-  float: right;
-  margin-bottom: 15px;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "PT Sans","Tahoma",sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 60%;
-  padding: 10px 23px;
-  color: #000;
-  background: #f2f2f2;
-  border: none;
-  outline: none; }
