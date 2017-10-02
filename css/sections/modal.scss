@@ -1,43 +1,43 @@
-// .modal {
-//     position: relative;
-//     width: 570px;
-//     margin: 0 auto;
-// }
-// .modal-form {
-//     width: 570px;
-//     padding: 40px 55px;
-//     position: absolute;
-//     background-color: #fff;
-//     box-shadow: 0 0 10px grey;
-//     z-index: 2;
-// }
-// .modal-form__item {
-//     margin-bottom: 34px;
-// }
-// .modal-form label {
-//     // width: 30%;
-//     float: left;
-//     padding-top: 10px;
-//     padding-bottom: 18px;
-//     padding-right: 15px;
-//     font-weight: bold;
-// }
-// .modal-form__date {
-//     position: relative;
-//     float: right;
-//     margin-bottom: 15px;
-//     font-size: 14px;
-//     line-height: 18px;
-//     font-family: "PT Sans","Tahoma",sans-serif;
-//     font-weight: bold;
-//     text-transform: uppercase;
-//     width: 60%;
-//     padding: 10px 23px;
-//     color: #000;
-//     background: #f2f2f2;
-//     border: none;
-//     outline: none;
-// }
+.modal {
+    position: relative;
+    width: 570px;
+    margin: 0 auto;
+}
+.modal-form {
+    width: 570px;
+    padding: 40px 55px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px grey;
+    z-index: 2;
+}
+.modal-form__item {
+	position: relative;
+    margin-bottom: 34px;
+}
+.modal-form span {
+    // width: 30%;
+    // float: left;
+    // padding-top: 10px;
+    // padding-bottom: 18px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.modal-form__date {
+    position: relative;
+    float: right;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "PT Sans","Tahoma",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 70%;
+    padding: 10px 23px;
+    color: #000;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+}
 // .modal-form__ico::before {
 //     content: "";
 //     display: inline-block;
@@ -58,9 +58,40 @@
 //     width: 21px;
 //     height: 22px;
 // }
-// .modal-form__lid, .modal-form__child {
-//     float: left;
-//     width: 229px;
+
+.qty {
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+
+input.qtyplus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+
+input.qtyminus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+
+.ui-datepicker-trigger {
+	position: absolute;
+	right: 3%;
+}
+// .count-item-num {
+// 	float: left;
+// 	width: 30%;
+// 	margin-right: 20px;
 // }
-
-
+// .count-item-num:nth-last-child {
+// 	margin-right: 0;
+// }

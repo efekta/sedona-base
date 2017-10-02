@@ -114,6 +114,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -451,7 +452,6 @@ h6 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
   width: 1200px;
   margin: 0 auto; }
 
@@ -673,18 +673,18 @@ h6 {
   margin-bottom: 52px; }
 
 .booking__button {
-  width: 458px;
+  width: 570px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  background-color: #81b3d2;
+  background: #766357;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 16px 0;
-  margin-bottom: 65px;
+  padding: 20px 0;
+  margin-bottom: 1px;
   text-align: center; }
 
 .footer {
@@ -767,3 +767,66 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.modal {
+  position: relative;
+  width: 570px;
+  margin: 0 auto; }
+
+.modal-form {
+  width: 570px;
+  padding: 40px 55px;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+  z-index: 2; }
+
+.modal-form__item {
+  position: relative;
+  margin-bottom: 34px; }
+
+.modal-form span {
+  padding-right: 15px;
+  font-weight: bold; }
+
+.modal-form__date {
+  position: relative;
+  float: right;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "PT Sans","Tahoma",sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 70%;
+  padding: 10px 23px;
+  color: #000;
+  background: #f2f2f2;
+  border: none;
+  outline: none; }
+
+.qty {
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa; }
+
+input.qtyplus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8; }
+
+input.qtyminus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8; }
+
+.ui-datepicker-trigger {
+  position: absolute;
+  right: 3%; }
+
+/*# sourceMappingURL=style.css.map */
