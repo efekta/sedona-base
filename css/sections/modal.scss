@@ -2,6 +2,7 @@
     position: relative;
     width: 570px;
     margin: 0 auto;
+    display: none;
 }
 .modal-form {
     width: 570px;
@@ -17,10 +18,10 @@
 }
 .modal-form span {
     // width: 30%;
-    // float: left;
+    float: left;
     // padding-top: 10px;
     // padding-bottom: 18px;
-    padding-right: 15px;
+    padding-right: 18px;
     font-weight: bold;
 }
 .modal-form__date {
@@ -66,6 +67,9 @@
   text-align: center;
   border: 0;
   background: #f2f2f2;
+  color :#000;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 
@@ -76,6 +80,9 @@ input.qtyplus {
   outline: none;
   background: #f2f2f2;
   padding: 0;
+  color: #a9a9a9;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 input.qtyminus {
@@ -85,6 +92,9 @@ input.qtyminus {
   outline: none;
   background: #f2f2f2;
   padding: 0;
+  color: #a9a9a9;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .ui-datepicker-trigger {
@@ -93,10 +103,17 @@ input.qtyminus {
 	top: 20%;
 }
 
-.modal-form-right {
+// .modal-form-right {
+// 	float: right;
+//     margin-bottom: 20px;
+//     position: relative;
+// }
+.count-item-num {
+	// float: left;
 	display: inline-block;
 }
-.count-item-num {
+.count-item-num-right {
+	// float: right;
 	display: inline-block;
 }
 .count-item {
@@ -108,5 +125,36 @@ input.qtyminus {
 .modal-form__user {
 	display: flex;
 	justify-content: space-between;
-	text-align: left;
+	margin-bottom: 53px;
+
+}
+.no-float {
+	float: none;
+}
+.btn {
+	width: 100%;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: #81b3d2;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 21px;
+	padding: 20px 0;
+}
+.btn:hover {
+	background: #669ec0;
+}
+.btn:active {
+	background: #5496bd;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    // top: 0;
+    // left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    // text-align: center;
+    display: none;
 }

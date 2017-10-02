@@ -24,6 +24,12 @@
     background-color: #81b3d2;
     color: #000;
 }
+.social-link:hover {
+	background: #669ec0;
+}
+.social-link:active {
+	background: #5496bd;
+}
 // svg:not(:root) {
 //     overflow: hidden;
 // }
@@ -43,11 +49,12 @@
 	position: relative;
 	color: #000;
 	font-weight: 500;
-	padding: 0 35px;
+	padding: 0 65px;
 }
+
 .dev__logo {
 	position: absolute;
-	left: 0;
+	right: 0;
 	top: 50%;
 	width: 29px;
 	height: 35px;
