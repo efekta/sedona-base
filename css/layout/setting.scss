@@ -13,6 +13,10 @@ body {
 	margin: 0;
 	text-transform: uppercase;
 	color: #000;
+
+	display: flex;
+  	// min-height: 100vh;
+  	flex-direction: column;
 }
 
 ul {
@@ -37,11 +41,12 @@ h6 {
 	font-weight: normal;
 }
 .wrapp {
-	display: flex;
-  	flex-direction: column;
   	// height: 100%;
  	width: 1200px;
     margin: 0 auto;
+    display: flex;
+  	flex-direction: column;
+  	height: 100%;
 }
 .wrapper {
 	display: flex;
@@ -54,6 +59,7 @@ h6 {
 	box-shadow: 0 -5px 25px #d3d3d3;
 }
 .footer {
+	flex: 0 0 auto;
 	box-shadow: 0 15px 25px #d3d3d3;
 }
 .clearfix::before {
