@@ -9,6 +9,12 @@
 	color: #000;
 	font-weight: bold;
 }
+.main-navigation__link:hover {
+	color: #81b3d2;
+}
+.main-navigation__link:active {
+	color: #b2b2b2;
+}
 .logo {
 	width: 138px;
     margin: 0 auto;
@@ -19,4 +25,7 @@
     height: 510px;
     background: #dbe9f2 url("../img/bg/main-bg.jpg") no-repeat;
     background-position: 100% 20.3%;
+}
+.main-navigation__item-active a {
+	color: #766357;
 }

@@ -513,6 +513,12 @@ h6 {
   color: #000;
   font-weight: bold; }
 
+.main-navigation__link:hover {
+  color: #81b3d2; }
+
+.main-navigation__link:active {
+  color: #b2b2b2; }
+
 .logo {
   width: 138px;
   margin: 0 auto;
@@ -522,6 +528,9 @@ h6 {
   height: 510px;
   background: #dbe9f2 url("../img/bg/main-bg.jpg") no-repeat;
   background-position: 100% 20.3%; }
+
+.main-navigation__item-active a {
+  color: #766357; }
 
 .lead {
   text-align: center;
@@ -925,7 +934,8 @@ input.qtyminus {
 .filter-structure__title {
   display: block;
   font-size: 16px;
-  line-height: 21px; }
+  line-height: 21px;
+  margin-bottom: 20px; }
 
 .filter-box {
   display: -webkit-box;
@@ -1007,8 +1017,9 @@ input[type="checkbox"] {
 
 .ui-widget.ui-widget-content {
   height: 2px;
-  border: 1px solid #d3d3d3;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border: none;
+  background-color: #7f7878; }
 
 .ui-slider-handle .ui-corner-all .ui-state-default {
   border-radius: 50%; }
@@ -1016,6 +1027,57 @@ input[type="checkbox"] {
 .slider-range span {
   background-color: #fff;
   border-radius: 50%; }
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.ui-button.ui-state-disabled:hover,
+.ui-button.ui-state-disabled:active {
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 1, 1, 0.14);
+  box-shadow: 0px 2px 0px 0px rgba(0, 1, 1, 0.14);
+  width: 21px;
+  height: 21px;
+  -webkit-transform: translate(0%, -25%);
+  -ms-transform: translate(0%, -25%);
+  transform: translate(0%, -25%); }
+
+.ui-state-default {
+  position: relative; }
+
+.ui-state-default::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #948d8d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.ui-state-default:hover::before {
+  background-color: #3c3636; }
+
+.btn-box {
+  text-align: center; }
+
+.btn-transparent {
+  background-color: transparent;
+  margin-top: 55px;
+  border: 2px solid #fff;
+  width: auto;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: normal; }
+
+.btn-transparent:hover {
+  background-color: #fff;
+  color: #000; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
