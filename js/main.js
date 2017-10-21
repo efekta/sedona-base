@@ -92,7 +92,7 @@ $( function() {
         if(this.href==document.location.href){
             // Присваиваем класс активному пункту меню li, а не ссылке.
             // ul.nav li.nav_item.nav_active a.nav_link
-            $(this).parent('ul.main-navigation__item').addClass('main-navigation__item-active');
+            $(this).parent('.main-navigation__item').addClass('main-navigation__item-active');
         }
     });
 });
