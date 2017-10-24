@@ -1,8 +1,59 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+   70% {
+    transform: translateY(30px);
+  }
+
+   90% {
+    transform: translateY(-10px);
+  }
+   100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+@keyframes bounce-hide {
+  0% {
+    transform: translateY(0);
+  }
+
+   70% {
+    transform: translateY(-10px);
+  }
+
+   90% {
+    transform: translateY(-30px);
+  }
+   100% {
+    transform: translateY(-2000px);
+  }
+}
+
+.bounce-hide {
+  animation-name: bounce-hide;
+}
+
 .modal {
     position: relative;
     width: 570px;
     margin: 0 auto;
-    display: block;
+    display: none;
+}
+.modal-show {
+  display: block;
+  animation: bounce .8s;
+  z-index: 100;
+}
+.modal-close {
+  display: none;
+  animation: bounce-hide .8s;
 }
 .modal-form {
     width: 570px;
@@ -94,9 +145,6 @@ input.qtyminus {
 	margin-bottom: 53px;
 
 }
-.no-float {
-	float: none;
-}
 .btn {
 	width: 100%;
 	outline: none;
@@ -120,4 +168,9 @@ input.qtyminus {
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     display: none;
+}
+.modal-form .no-float {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
 }

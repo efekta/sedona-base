@@ -794,11 +794,86 @@ h6 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px); }
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px); }
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px); }
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px); }
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce; }
+
+@-webkit-keyframes bounce-hide {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  70% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  90% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  100% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px); } }
+
+@keyframes bounce-hide {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  70% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  90% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  100% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px); } }
+
+.bounce-hide {
+  -webkit-animation-name: bounce-hide;
+  animation-name: bounce-hide; }
+
 .modal {
   position: relative;
   width: 570px;
   margin: 0 auto;
-  display: block; }
+  display: none; }
+
+.modal-show {
+  display: block;
+  -webkit-animation: bounce .8s;
+  animation: bounce .8s;
+  z-index: 100; }
+
+.modal-close {
+  display: none;
+  -webkit-animation: bounce-hide .8s;
+  animation: bounce-hide .8s; }
 
 .modal-form {
   width: 570px;
@@ -890,9 +965,6 @@ input.qtyminus {
   justify-content: space-between;
   margin-bottom: 53px; }
 
-.no-float {
-  float: none; }
-
 .btn {
   width: 100%;
   outline: none;
@@ -916,6 +988,11 @@ input.qtyminus {
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   display: none; }
+
+.modal-form .no-float {
+  float: none;
+  display: inline-block;
+  vertical-align: middle; }
 
 .filter-menu {
   background: url(../img/bg/filter-background.jpg) no-repeat;

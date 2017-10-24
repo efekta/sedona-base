@@ -31,12 +31,12 @@ $( "#datepicker" ).datepicker({
     nextText: ">>",
     prevText: "<<"
   });
-var modalBtn = $('.booking__button');
-var modal = $('.modal');
-modal.hide();
-modalBtn.click(function() {
-$('.modal').slideToggle('slow');
-});
+// var modalBtn = $('.booking__button');
+// var modal = $('.modal');
+// modal.hide();
+// modalBtn.click(function() {
+// $('.modal').slideToggle('slow');
+// });
 
 
 $( function() {
@@ -98,4 +98,28 @@ $( function() {
             $(this).parent('.main-navigation__item').addClass('main-navigation__item-active');
         }
     });
+var modalBtn = document.querySelector('.booking__button');
+var popup = document.querySelector('.modal');
+modalBtn.addEventListener('click', function(event) {
+event.preventDefault();
+popup.classList.toggle('modal-show');
 });
+modalBtn.addEventListener('dbclick', function(event) {
+event.preventDefault();
+popup.classList.toggle('modal');
+});
+window.addEventListener('keydown', function(event) {
+if (event.keyCode === 27) {
+if (popup.classList.contains('modal-show')) {
+popup.classList.remove('modal-show');
+}
+}
+});
+});
+
+// var modalBtn = $('.booking__button');
+// var modal = $('.modal');
+// modal.hide();
+// modalBtn.click(function() {
+// $('.modal').slideToggle('slow');
+// });
