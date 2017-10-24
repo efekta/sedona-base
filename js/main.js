@@ -31,8 +31,10 @@ $( "#datepicker" ).datepicker({
     nextText: ">>",
     prevText: "<<"
   });
-var $modalBtn = $('.booking__button');
-$modalBtn.click(function() {
+var modalBtn = $('.booking__button');
+var modal = $('.modal');
+modal.hide();
+modalBtn.click(function() {
 $('.modal').slideToggle('slow');
 });
 
@@ -96,3 +98,12 @@ $( function() {
         }
     });
 });
+
+
+
+// var $modalBtn = $('.booking__button');
+// var modal = $('.modal');
+// modal.hide();
+// $modalBtn.click(function() {
+// $('.modal').slideToggle('slow');
+// });
