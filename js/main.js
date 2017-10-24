@@ -38,6 +38,7 @@ modalBtn.click(function() {
 $('.modal').slideToggle('slow');
 });
 
+
 $( function() {
     $( "#slider-range" ).slider({
       range: true,
@@ -98,12 +99,3 @@ $( function() {
         }
     });
 });
-
-
-
-// var $modalBtn = $('.booking__button');
-// var modal = $('.modal');
-// modal.hide();
-// $modalBtn.click(function() {
-// $('.modal').slideToggle('slow');
-// });

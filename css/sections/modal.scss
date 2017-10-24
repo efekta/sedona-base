@@ -1,23 +1,8 @@
-// @keyframes bounce {
-//  0% {
-//    transform: translateY(-2000px);
-//  }
-//  70% {
-//    transform: translateY(30px);
-//  }
-//  90% {
-//    transform: translateY(-10px);
-//  }
-//  100% {
-//    transform: translateY(0);
-//  }
-// }
 .modal {
     position: relative;
     width: 570px;
     margin: 0 auto;
     display: block;
-    // animation: bounce 0.6s;
 }
 .modal-form {
     width: 570px;
@@ -27,44 +12,21 @@
     box-shadow: 0 0 10px grey;
     z-index: 2;
 }
-// @keyframes bounce {
-//  0% {
-//    transform: translateY(-2000px);
-//  }
-//  70% {
-//    transform: translateY(30px);
-//  }
-//  90% {
-//    transform: translateY(-10px);
-//  }
-//  100% {
-//    transform: translateY(0);
-//  }
-// }
-// .modal {
-//  animation: bounce 0.6s;
-// }
 .modal-form__item {
 	position: relative;
     margin-bottom: 34px;
 }
 .modal-form span {
-    // width: 30%;
     float: left;
-    // padding-top: 10px;
-    // padding-bottom: 18px;
     padding-right: 18px;
     font-weight: bold;
 }
 .modal-form__date {
-    // position: relative;
-    // float: right;
     font-size: 14px;
     line-height: 18px;
     font-family: "PT Sans","Tahoma",sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    // width: 70%;
     width: 330px;
     padding: 10px 23px;
     color: #000;
@@ -72,26 +34,6 @@
     border: none;
     outline: none;
 }
-// .modal-form__ico::before {
-//     content: "";
-//     display: inline-block;
-//     position: absolute;
-//     background: url(../img/icons/DE103C61.png);
-//     top: 18%;
-//     left: 85%;
-//     width: 21px;
-//     height: 22px;
-// }
-// .modal-form__ico-2::after {
-//     content: "";
-//     display: inline-block;
-//     position: absolute;
-//     background: url(../img/icons/DE103C61.png);
-//     top: 38%;
-//     left: 85%;
-//     width: 21px;
-//     height: 22px;
-// }
 
 .qty {
   width: 35px;
@@ -103,7 +45,6 @@
   font-weight: bold;
   font-size: 16px;
 }
-
 
 input.qtyplus {
   width: 35px;
@@ -135,17 +76,10 @@ input.qtyminus {
 	top: 20%;
 }
 
-// .modal-form-right {
-// 	float: right;
-//     margin-bottom: 20px;
-//     position: relative;
-// }
 .count-item-num {
-	// float: left;
 	display: inline-block;
 }
 .count-item-num-right {
-	// float: right;
 	display: inline-block;
 }
 .count-item {
@@ -184,9 +118,6 @@ input.qtyminus {
     position: fixed;
     width: 100%;
     height: 100vh;
-    // top: 0;
-    // left: 0;
     background: rgba(0, 0, 0, 0.8);
-    // text-align: center;
     display: none;
 }
