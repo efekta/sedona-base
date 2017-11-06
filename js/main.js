@@ -16,9 +16,9 @@ jQuery(document).ready(function($) {
   });
 
 
-$('.ui-datepicker-trigger').click(function() {
-  $('.datepicker').show();
-  });
+// $('img.ui-datepicker-trigger').click(function() {
+//   $('.datepicker').show();
+//   });
 
 // $( ".datepicker-here" ).datepicker({
 //     showOn: "both",
@@ -36,6 +36,7 @@ $('.ui-datepicker-trigger').click(function() {
 //     nextText: ">>",
 //     prevText: "<<"
 // });
+
 var modalBtn = $('.booking__button');
 var modal = $('.modal');
 modal.hide();
@@ -120,11 +121,7 @@ popup.classList.remove('modal-show');
 }
 }
 });
+
 });
 
-// var modalBtn = $('.booking__button');
-// var modal = $('.modal');
-// modal.hide();
-// modalBtn.click(function() {
-// $('.modal').slideToggle('slow');
-// });
+
