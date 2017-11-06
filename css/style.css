@@ -904,7 +904,8 @@ h6 {
   color: #000;
   background: #f2f2f2;
   border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
 
 .qty {
   width: 35px;
@@ -941,7 +942,8 @@ input.qtyminus {
 .ui-datepicker-trigger {
   position: absolute;
   right: 3%;
-  top: 20%; }
+  top: 20%;
+  cursor: pointer; }
 
 .count-item-num {
   display: inline-block; }

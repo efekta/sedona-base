@@ -15,28 +15,30 @@ jQuery(document).ready(function($) {
     $num.val(--currentNum);
   });
 
-$( "#datepicker" ).datepicker({
-    showOn: "both",
-    buttonImage: "img/icons/DE103C61.png",
-    buttonImageOnly: true,
-    buttonText: "Select date",
-    nextText: ">>",
-    prevText: "<<"
-  });
-  $( "#datepickerCome" ).datepicker({
-    showOn: "both",
-    buttonImage: "img/icons/DE103C61.png",
-    buttonImageOnly: true,
-    buttonText: "Select date",
-    nextText: ">>",
-    prevText: "<<"
-  });
-// var modalBtn = $('.booking__button');
-// var modal = $('.modal');
-// modal.hide();
-// modalBtn.click(function() {
-// $('.modal').slideToggle('slow');
+
+
+// $( ".datepicker-here" ).datepicker({
+//     showOn: "both",
+//     buttonImage: "img/icons/DE103C61.png",
+//     buttonImageOnly: true,
+//     buttonText: "Select date",
+//     nextText: ">>",
+//     prevText: "<<"
 // });
+// $( "#datepickerCome" ).datepicker({
+//     showOn: "both",
+//     buttonImage: "img/icons/DE103C61.png",
+//     buttonImageOnly: true,
+//     buttonText: "Select date",
+//     nextText: ">>",
+//     prevText: "<<"
+// });
+var modalBtn = $('.booking__button');
+var modal = $('.modal');
+modal.hide();
+modalBtn.click(function() {
+$('.modal').slideToggle('slow');
+});
 
 
 $( function() {

@@ -84,6 +84,7 @@
     background: #f2f2f2;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .qty {
@@ -125,6 +126,7 @@ input.qtyminus {
 	position: absolute;
 	right: 3%;
 	top: 20%;
+  cursor: pointer;
 }
 
 .count-item-num {
@@ -174,4 +176,3 @@ input.qtyminus {
   display: inline-block;
   vertical-align: middle;
 }
-
