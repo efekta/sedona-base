@@ -16,6 +16,9 @@ jQuery(document).ready(function($) {
   });
 
 
+$('.ui-datepicker-trigger').click(function() {
+  $('.datepicker').show();
+  });
 
 // $( ".datepicker-here" ).datepicker({
 //     showOn: "both",
