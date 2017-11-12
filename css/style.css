@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -1157,6 +1158,27 @@ input[type="checkbox"] {
 .btn-transparent:hover {
   background-color: #fff;
   color: #000; }
+
+/*TABS*/
+.tabs {
+  padding: 30px 70px; }
+
+.tabs__title {
+  display: inline-block; }
+
+.tabs__controls {
+  display: inline-block; }
+
+.tabs__controls-item {
+  display: inline-block; }
+
+.tabs__item {
+  display: none;
+  /* по умолчанию прячем все блоки */ }
+
+.tabs__item.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */ }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

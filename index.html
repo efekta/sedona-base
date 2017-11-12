@@ -173,5 +173,24 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="js/datepicker.min.js"></script>
 		<script src="js/main.js" type="text/javascript"></script>
+		<script>
+	    var modalBtn = document.querySelector('.booking__button');
+    popup = document.querySelector('.modal');
+    modalBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    popup.classList.toggle('modal-show');
+});
+modalBtn.addEventListener('dbclick', function(event) {
+    event.preventDefault();
+    popup.classList.toggle('modal');
+});
+window.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) {
+        if (popup.classList.contains('modal-show')) {
+            popup.classList.remove('modal-show');
+        }
+    }
+});
+		</script>
 	</body>
 </html>
