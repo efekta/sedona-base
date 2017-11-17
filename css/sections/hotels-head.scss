@@ -143,18 +143,31 @@ input[type="checkbox"] {
 	background-color: #fff;
 	color: #000;
 }
-/*TABS*/
-.tabs {
+.main {
 	padding: 30px 70px;
 }
+/*TABS*/
 .tabs__title {
 	display: inline-block;
+	font-size: 0;
+}
+.tab-subtitle {
+	font-size: 12px;
+	margin-right: 40px;
+}
+.tab-title {
+	font-size: 21px;
+	font-weight: bold;
+	margin-right: 40px;
 }
 .tabs__controls {
 	display: inline-block;
+	font-size: 0;
 }
 .tabs__controls-item {
 	display: inline-block;
+	font-size: 12px;
+	margin-right: 40px;
 }
 .tabs__item {
   display: none; /* по умолчанию прячем все блоки */
