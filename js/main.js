@@ -138,12 +138,12 @@ jQuery(document).ready(function($) {
             // .removeClass('active');
         });
 
+$(function() {
+    var sbula = $(".tabs__controls li a");
+    
+    sbula.click(function() {
+        sbula.removeClass("active-link").not(sbula).add(this).toggleClass("active-link");
+    });
+});
 
-  $('.tabs__control-link').on('click', function(e) {
-    e.preventDefault();
-    $('.tabs__control-link').addClass('active-link');
-    e.preventDefault();
-    $(this).removeClass('active-link');
-    e.preventDefault();
-  })
 });
