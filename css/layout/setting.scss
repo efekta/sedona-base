@@ -41,8 +41,8 @@ h6 {
 	font-weight: normal;
 }
 .wrapp {
-  	// height: 100%;
- 	width: 1200px;
+ 	max-width: 1200px;
+ 	min-width: 320px;
     margin: 0 auto;
     display: flex;
   	flex-direction: column;
