@@ -219,3 +219,12 @@ input[type="checkbox"] {
 	color: #81b3d2;
 	font-size: 14px;
 }
+
+.tabs__control-link {
+	color: #ada8a8;
+	border-bottom: 1px dotted #ada8a8; 
+}
+.active-link {
+	color: #81b3d2;
+	border: none;
+}

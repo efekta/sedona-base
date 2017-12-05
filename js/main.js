@@ -137,4 +137,13 @@ jQuery(document).ready(function($) {
             // siblings()
             // .removeClass('active');
         });
+
+
+  $('.tabs__control-link').on('click', function(e) {
+    e.preventDefault();
+    $('.tabs__control-link').addClass('active-link');
+    e.preventDefault();
+    $(this).removeClass('active-link');
+    e.preventDefault();
+  })
 });
