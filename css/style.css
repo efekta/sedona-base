@@ -68,7 +68,6 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -115,7 +114,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -293,7 +291,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -329,7 +326,6 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -408,7 +404,6 @@ template {
   display: none; }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body, html {
@@ -422,12 +417,9 @@ body {
   margin: 0;
   text-transform: uppercase;
   color: #000;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
@@ -453,28 +445,21 @@ h6 {
   font-weight: normal; }
 
 .wrapp {
-  max-width: 1200px;
-  min-width: 320px;
+  width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  -webkit-box-shadow: 0 -5px 25px #d3d3d3;
   box-shadow: 0 -5px 25px #d3d3d3; }
 
 .wrapper {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -482,13 +467,11 @@ h6 {
   padding: 20px 45px; }
 
 .container {
-  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto; }
 
 .footer {
-  -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
@@ -502,11 +485,9 @@ h6 {
   min-height: 56px; }
 
 .main-navigation__list {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -548,7 +529,6 @@ h6 {
   color: #333333; }
 
 .about {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
@@ -599,11 +579,9 @@ h6 {
   height: 304; }
 
 .features {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -628,11 +606,9 @@ h6 {
   margin-bottom: 35px; }
 
 .attraction {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -710,11 +686,9 @@ h6 {
   text-align: center; }
 
 .footer {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -725,11 +699,9 @@ h6 {
   padding: 50px 0; }
 
 .copy {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -738,11 +710,9 @@ h6 {
   color: #000; }
 
 .social {
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -773,11 +743,9 @@ h6 {
   fill: #fff; }
 
 .dev {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -882,7 +850,6 @@ h6 {
   padding: 40px 55px;
   position: absolute;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 10px grey;
   box-shadow: 0 0 10px grey;
   z-index: 2; }
 
@@ -959,11 +926,9 @@ input.qtyminus {
   width: 120px; }
 
 .modal-form__user {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1003,7 +968,6 @@ input.qtyminus {
   background-size: cover; }
 
 .filter-form {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1019,11 +983,9 @@ input.qtyminus {
   margin-bottom: 20px; }
 
 .filter-box {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1034,11 +996,9 @@ input.qtyminus {
   font-size: 14px; }
 
 label {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -1117,7 +1077,6 @@ input[type="checkbox"] {
 .ui-button.ui-state-disabled:active {
   border-radius: 50%;
   background-color: white;
-  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 1, 1, 0.14);
   box-shadow: 0px 2px 0px 0px rgba(0, 1, 1, 0.14);
   width: 21px;
   height: 21px;
@@ -1197,7 +1156,6 @@ input[type="checkbox"] {
 .tab {
   border: 1px solid #e5e5e5;
   padding: 30px 0;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
